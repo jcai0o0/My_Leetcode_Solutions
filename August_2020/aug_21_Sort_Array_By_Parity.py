@@ -14,6 +14,6 @@ class Solution:
             if A[curr] % 2 == 1:
                 A[curr], A[partition] = A[partition], A[curr]
                 partition -= 1
-            elif A[curr] % 2 == 0:
+            else:
                 curr += 1
         return A
