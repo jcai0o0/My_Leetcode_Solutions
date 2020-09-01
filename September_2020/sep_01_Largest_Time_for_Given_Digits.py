@@ -5,8 +5,8 @@
 class Solution:
     def largestTimeFromDigits(self, A: List[int]) -> str:
         A = sorted(A)
-        for hour in range(23,-1,-1):
-            for minute in range(59,-1,-1):
+        for hour in range(23, -1, -1):
+            for minute in range(59, -1, -1):
                 temp = [hour//10, hour%10, minute//10, minute%10]
                 sorted_temp = sorted(temp)
                 if sorted_temp == A:
